@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h2>First Page</h2>
+    <h2>Prediction table page</h2>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
   head() {
     return {
-      title: "Gas Price app",
+      title: "Prediction page",
       meta: [
         {
           hid: "description",
