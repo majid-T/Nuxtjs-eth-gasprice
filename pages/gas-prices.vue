@@ -2,12 +2,14 @@
   <div class="container">
     <h2>Gas Prices Page</h2>
     <GasPrice :gasPrice="gasPrice" />
+    <PriceRangeBar :ranges="gasPrice.gasPriceRange" />
   </div>
 </template>
 
 <script>
 import axios from "axios";
 import GasPrice from "../components/GasPrice";
+import PriceRangeBar from "../components/PriceRangeBar";
 
 export default {
   async asyncData({ $config: { apiSecret, url } }) {
@@ -19,7 +21,8 @@ export default {
     }
   },
   components: {
-    GasPrice
+    GasPrice,
+    PriceRangeBar
   },
   head() {
     return {
