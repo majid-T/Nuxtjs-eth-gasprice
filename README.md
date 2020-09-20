@@ -10,6 +10,7 @@
 
 # Nuxtjs-eth-gasprice
 App using Nuxtjs to get ethereum gas prices from a 3dparty API
+- 3rd Party API is https://docs.ethgasstation.info/
 
 ### Technologies and tools used in this project
 - [Nuxt.js](https://nuxtjs.org/) - A framework on top of Vue.js to implement powerful web frontend.
@@ -17,3 +18,4 @@ App using Nuxtjs to get ethereum gas prices from a 3dparty API
 - [Chart.js](https://www.chartjs.org/) - Java script charting tool
 - [Font awsome](https://fontawesome.com/) - CDN for Online icons and fonts
 - [Vuex](https://vuex.vuejs.org/guide/) - State management tool for Vue.js
+- [dotenv](https://www.npmjs.com/package/dotenv) - Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env. 
