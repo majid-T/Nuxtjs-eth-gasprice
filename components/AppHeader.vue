@@ -1,47 +1,28 @@
 <template>
-  <header class="header">
-    <h1 class="title">Ethereum Gas Prices</h1>
-    <ul>
-      <li>
+  <b-navbar>
+    <template slot="brand">
+      <b-navbar-item tag="router-link" :to="{ path: '/' }">
+        <img
+          src="https://raw.githubusercontent.com/buefy/buefy/dev/static/img/buefy-logo.png"
+          alt="Lightweight UI components for Vue.js based on Bulma"
+        />
+      </b-navbar-item>
+    </template>
+    <template slot="start">
+      <b-navbar-item>
         <nuxt-link to="/">Home</nuxt-link>
-        <nuxt-link to="/gas-prices">Gas Prices</nuxt-link>
-        <nuxt-link to="/prediction-table">Prediction Table</nuxt-link>
+      </b-navbar-item>
+      <b-navbar-item>
         <nuxt-link to="/about">About</nuxt-link>
-      </li>
-    </ul>
-  </header>
+      </b-navbar-item>
+      <b-navbar-dropdown label="API CALLS">
+        <b-navbar-item>
+          <nuxt-link to="/gas-prices">Gas Prices</nuxt-link>
+        </b-navbar-item>
+        <b-navbar-item>
+          <nuxt-link to="/prediction-table">Prediction Table</nuxt-link>
+        </b-navbar-item>
+      </b-navbar-dropdown>
+    </template>
+  </b-navbar>
 </template>
-
-<script>
-export default {
-  name: "AppHeader",
-};
-</script>
-
-<style>
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #ccc;
-}
-
-.header .title {
-  font-size: 3rem;
-  color: gray;
-}
-
-.header ul {
-  display: flex;
-}
-
-.header a {
-  display: inline-block;
-  background: #333;
-  color: #fff;
-  padding: 0.3rem 1rem;
-  margin-right: 0.5rem;
-}
-</style>
