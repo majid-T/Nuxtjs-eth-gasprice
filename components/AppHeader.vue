@@ -3,7 +3,7 @@
     <template slot="brand">
       <b-navbar-item tag="router-link" :to="{ path: '/' }">
         <img
-          src="https://raw.githubusercontent.com/buefy/buefy/dev/static/img/buefy-logo.png"
+          src="https://ethereum.org/static/21c418bf00f87ff4d4b83e3499ddb391/1d713/ethereum-logo-wireframe.png"
           alt="Lightweight UI components for Vue.js based on Bulma"
         />
       </b-navbar-item>
