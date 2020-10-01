@@ -19,3 +19,9 @@ App using Nuxtjs to get ethereum gas prices from a 3dparty API
 - [Font awsome](https://fontawesome.com/) - CDN for Online icons and fonts
 - [Vuex](https://vuex.vuejs.org/guide/) - State management tool for Vue.js
 - [dotenv](https://www.npmjs.com/package/dotenv) - Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env. 
+
+# How to run
+1. clone this repo
+1. cd to directory
+1. run npm install
+1. run npm run dev
