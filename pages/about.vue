@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h1>Gas Price App</h1>
     <p>An app to fetch gas prices from a 3rd party API</p>
   </div>
