@@ -19,23 +19,24 @@ App using Nuxtjs to get ethereum gas prices from a 3dparty API
 - [Font awsome](https://fontawesome.com/) - CDN for Online icons and fonts
 - [Vuex](https://vuex.vuejs.org/guide/) - State management tool for Vue.js
 - [dotenv](https://www.npmjs.com/package/dotenv) - Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env. 
+- [Buefy](https://buefy.org/) - Lightweight UI components for Vue.js based on Bulma
 
 ## How to run
 ### To run locally
-1. clone this repo
+- clone this repo
 ```
 git clone https://github.com/majid-T/Nuxtjs-eth-gasprice.git
 ```
-1. cd to directory
+- cd to directory
 ```
 cd Nuxtjs-eth-gasprice
 ```
-1. run npm install
+- run npm install
 ```
 npm i
 ```
-1. run npm run dev
+- run npm run dev
 ```
 npm run dev
 ```
-1. App will be available on http://localhost:3000/
+- App will be available on http://localhost:3000/
