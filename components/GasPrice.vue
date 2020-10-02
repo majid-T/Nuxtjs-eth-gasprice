@@ -17,7 +17,7 @@
 <script>
 export default {
   name: "GasPrice",
-  props: ["gasPrice"]
+  props: ["gasPrice"],
 };
 </script>
 

@@ -1,8 +1,11 @@
 <template>
-  <div class="container">
-    <h2>Gas Prices Page</h2>
-    <GasPrice :gasPrice="gasPrice" />
-    <PriceRangeBar :ranges="gasPrice.gasPriceRange" />
+  <div>
+    <div v-if="!isLoading" class="container">
+      <h2>Gas Prices Page</h2>
+      <GasPrice :gasPrice="gasPrice" />
+      <PriceRangeBar :ranges="gasPrice.gasPriceRange" />
+    </div>
+    <b-loading v-else :is-full-page="true" v-model="isLoading"></b-loading>
   </div>
 </template>
 
@@ -12,9 +15,15 @@ import GasPrice from "../components/GasPrice";
 import PriceRangeBar from "../components/PriceRangeBar";
 
 export default {
+  data() {
+    return {
+      isLoading: true,
+    };
+  },
   async asyncData({ $config: { apiSecret, url } }) {
     try {
       const result = await axios.get(url + apiSecret);
+
       return { gasPrice: result.data };
     } catch (err) {
       console.log(err);
@@ -22,7 +31,10 @@ export default {
   },
   components: {
     GasPrice,
-    PriceRangeBar
+    PriceRangeBar,
+  },
+  mounted() {
+    this.isLoading = false;
   },
   head() {
     return {
@@ -31,11 +43,11 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "Get latest ethereum gas price from here"
-        }
-      ]
+          content: "Get latest ethereum gas price from here",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
